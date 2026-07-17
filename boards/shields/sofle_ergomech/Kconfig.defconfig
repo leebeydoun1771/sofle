@@ -16,10 +16,4 @@ if SHIELD_SOFLE_ERGOMECH_LEFT || SHIELD_SOFLE_ERGOMECH_RIGHT
 config ZMK_SPLIT
     default y
 
-if ZMK_RGB_UNDERGLOW
-
-config WS2812_STRIP
-    default y
-endif
-
 endif
