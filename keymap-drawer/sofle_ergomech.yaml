@@ -82,7 +82,7 @@ layers:
   - Sft+Ctl+Gui+;
   - Sft+]
   - Sft+=
-  - '|'
+  - Sft+\
   - Sft+0
   - Sft+5
   - {t: ▽, type: trans}
