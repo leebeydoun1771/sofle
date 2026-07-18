@@ -1,21 +1,7 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, A, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, B]
-  lower:
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '`'
+  Base:
+  - ESCAPE
   - '1'
   - '2'
   - '3'
@@ -26,162 +12,120 @@ layers:
   - '8'
   - '9'
   - '0'
-  - F12
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - +
-  - '{'
-  - '}'
-  - '['
-  - ']'
-  - ;
-  - ':'
-  - \
-  - {t: ▽, type: trans}
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - Sft+Ctl+Gui+;
+  - {t: special_keys, h: sticky}
   - A
-  - LGUI
-  - LALT
-  - LCTRL
-  - {t: lower, type: held}
-  - RET
-  - SPACE
-  - raise
-  - RCTRL
-  - RALT
-  - RGUI
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: special_keys, h: sticky}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
   - B
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - DELETE
+  - BACKSPACE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - HOME
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - SPACE
+  - {t: LCTRL, h: sticky}
+  - {t: RIGHT COMMAND, h: sticky}
+  - ENTER
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - END
+  special_keys:
+  - '&studio_unlock'
+  - Meh+1
+  - Meh+2
+  - Meh+3
+  - Sft+Ctl+Gui+4
+  - Sft+Gui+F5
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - Meh+9
+  - Meh+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+\
+  - '['
+  - Sft+9
+  - Sft+[
+  - Sft+Ctl+Gui+;
+  - Sft+]
+  - Sft+=
+  - '|'
+  - Sft+0
+  - Sft+5
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - {type: held}
+  - Sft+'
+  - '`'
+  - Sft+4
+  - Sft+2
+  - Sft+-
   - LEFT
   - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - UP ARROW
+  - RIGHT ARROW
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+7
+  - '#'
+  - Sft+1
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ']'
+  - '-'
+  - Sft+6
+  - Sft+8
+  - \
   - {t: ▽, type: trans}
-  - A
-  - LGUI
-  - LALT
-  - LCTRL
-  - lower
-  - RET
-  - SPACE
-  - {t: raise, type: held}
-  - RCTRL
-  - RALT
-  - RGUI
-  - B
-  adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - A
-  - LGUI
-  - LALT
-  - LCTRL
-  - {t: lower, type: held}
-  - RET
-  - SPACE
-  - {t: raise, type: held}
-  - RCTRL
-  - RALT
-  - RGUI
-  - B
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [27, 28]
+  k: '&Arrow'
+- p: [31, 32]
+  k: ESCAPE
+- p: [52, 51, 50]
+  k: '&bootloader'
